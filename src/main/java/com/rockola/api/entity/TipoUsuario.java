@@ -21,6 +21,7 @@ public class TipoUsuario {
 
     public Integer getIdTipoUsuario() {
         return idTipoUsuario;
+
     }
 
     public void setIdTipoUsuario(Integer idTipoUsuario) {
