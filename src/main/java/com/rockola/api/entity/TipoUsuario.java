@@ -3,6 +3,7 @@ package com.rockola.api.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
+
 @Data
 @Entity
 @Table(name = "tipo_usuario")
