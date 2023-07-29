@@ -25,37 +25,4 @@ public class Lista {
     @Column(name = "descripcion_lista")
     private String descripcionLista;
 
-
-    /*Getter and Setter*/
-    public Integer getIdLista() {
-        return idLista;
-    }
-
-    public void setIdLista(Integer idLista) {
-        this.idLista = idLista;
-    }
-
-    public String getNombreLista() {
-        return nombreLista;
-    }
-
-    public void setNombreLista(String nombreLista) {
-        this.nombreLista = nombreLista;
-    }
-
-    public LocalDateTime getFechaCreoLista() {
-        return fechaCreoLista;
-    }
-
-    public void setFechaCreoLista(LocalDateTime fechaCreoLista) {
-        this.fechaCreoLista = fechaCreoLista;
-    }
-
-    public String getDescripcionLista() {
-        return descripcionLista;
-    }
-
-    public void setDescripcionLista(String descripcionLista) {
-        this.descripcionLista = descripcionLista;
-    }
 }
