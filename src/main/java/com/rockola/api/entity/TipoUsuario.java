@@ -20,6 +20,8 @@ public class TipoUsuario {
     @Column(name = "descripcion_tipo_usuario")
     private String descripcionTipoUsuario;
 
+
+    /*Getter and Setter*/
     public Integer getIdTipoUsuario() {
         return idTipoUsuario;
     }
