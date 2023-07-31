@@ -20,7 +20,7 @@ public class ListaCancion {
 
     @ManyToOne
     @JoinColumn(name = "lista_cancion_id_cancion_fk", referencedColumnName = "id_cancion")
-    private Canciones canciones;
+    private Cancion cancion;
 
     @Column(name = "descripcion_lista_cancion")
     private String descripcionListaCancion;
