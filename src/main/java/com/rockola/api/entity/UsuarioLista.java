@@ -17,9 +17,9 @@ public class UsuarioLista {
     @JoinColumn(name="usuario_lista_id_lista_fk", referencedColumnName = "id_lista")
     private Lista lista;
 
-    @ManyToOne
-    @JoinColumn(name = "usuario_lista_id_asuario_fk", referencedColumnName = "id_asuario")
-    private Usuario usuario;
+    //@ManyToOne
+    //@JoinColumn(name = "usuario_lista_id_asuario_fk", referencedColumnName = "id_asuario")
+    //private Usuario usuario;
 
     @Column(name="descripcion_usuario_lista")
     private String descripcionUsuarioLista;
