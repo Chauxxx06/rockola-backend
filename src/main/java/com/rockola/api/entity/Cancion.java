@@ -38,5 +38,6 @@ public class Cancion {
     //@ManyToOne
     //@JoinColumn(name="cancion_id_artista_fk", referencedColumnName = "id_artista")
     //private Artista artista;
+    //prueba commit git
 
 }

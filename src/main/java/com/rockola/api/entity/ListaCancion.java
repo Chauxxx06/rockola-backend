@@ -13,7 +13,7 @@ public class ListaCancion {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_lista_cancion")
     private Integer idListaCancion;
-
+/* */
     @ManyToOne
     @JoinColumn(name = "lista_cancion_id_lista_fk", referencedColumnName = "id_lista")
     private Lista lista;
