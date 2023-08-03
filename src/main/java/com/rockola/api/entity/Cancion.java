@@ -35,9 +35,8 @@ public class Cancion {
     @JoinColumn(name="cancion_id_genero_music_fk", referencedColumnName = "id_genero")
     private GeneroMusical generoMusical;
 
-    //@ManyToOne
-    //@JoinColumn(name="cancion_id_artista_fk", referencedColumnName = "id_artista")
-    //private Artista artista;
-    //prueba commit git
+    @ManyToOne
+    @JoinColumn(name="cancion_id_artista_fk", referencedColumnName = "id_artista")
+    private Artista artista;
 
 }
