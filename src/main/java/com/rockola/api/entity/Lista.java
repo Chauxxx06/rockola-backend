@@ -16,13 +16,13 @@ public class Lista {
     @Column(name = "id_lista")
     private Integer idLista;
 
-    @Column(name = "nombre_lista")
+    @Column(name = "nombre_lista", length = 70)
     private String nombreLista;
 
-    @Column(name ="fecha_creo_lista")
+    @Column(name ="fecha_creo_lista", columnDefinition = "DATETIME")
     private LocalDateTime fechaCreoLista;
 
-    @Column(name = "descripcion_lista")
+    @Column(name = "descripcion_lista", length = 100)
     private String descripcionLista;
 
 }

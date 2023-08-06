@@ -2,12 +2,7 @@ package com.rockola.api.entity;
 
 import java.time.LocalDateTime;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
@@ -37,7 +32,7 @@ public class Usuario {
     @Column(name = "Password", length = 50)
     private String password;
 
-    @Column(name = "fecha-registro", columnDefinition = "DATETIME")
+    @Column(name = "fecha_registro", columnDefinition = "DATETIME")
     private LocalDateTime fechaRegistro;
 
     @ManyToOne

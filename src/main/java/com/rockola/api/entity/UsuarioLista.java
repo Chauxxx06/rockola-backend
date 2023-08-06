@@ -11,7 +11,7 @@ public class UsuarioLista {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_usuario_lista")
-    private Integer idUsuarioCancion;
+    private Integer idUsuarioLista;
 
     @ManyToOne
     @JoinColumn(name="usuario_lista_id_lista_fk", referencedColumnName = "id_lista")
@@ -21,7 +21,7 @@ public class UsuarioLista {
     @JoinColumn(name = "usuario_lista_id_asuario_fk", referencedColumnName = "id_asuario")
     private Usuario usuario;
 
-    @Column(name="descripcion_usuario_lista")
+    @Column(name="descripcion_usuario_lista", length = 100)
     private String descripcionUsuarioLista;
 
 }

@@ -20,7 +20,7 @@ public class Artista {
     @Column(name = "nombre_artista", length = 50)
     private String nombreArtista;
 
-    @Column(name = "genero_artista")
+    @Column(name = "genero_artista", length = 100)
     private String generoArtista;
 
     @Column(name = "descripcion_artista", length = 100)

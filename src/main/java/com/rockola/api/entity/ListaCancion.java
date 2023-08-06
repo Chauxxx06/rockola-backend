@@ -13,7 +13,7 @@ public class ListaCancion {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_lista_cancion")
     private Integer idListaCancion;
-/* */
+
     @ManyToOne
     @JoinColumn(name = "lista_cancion_id_lista_fk", referencedColumnName = "id_lista")
     private Lista lista;
@@ -22,7 +22,7 @@ public class ListaCancion {
     @JoinColumn(name = "lista_cancion_id_cancion_fk", referencedColumnName = "id_cancion")
     private Cancion cancion;
 
-    @Column(name = "descripcion_lista_cancion")
+    @Column(name = "descripcion_lista_cancion", length = 100)
     private String descripcionListaCancion;
 
 
