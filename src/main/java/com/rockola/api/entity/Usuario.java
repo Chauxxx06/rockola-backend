@@ -11,8 +11,9 @@ import lombok.Data;
 public class Usuario {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_usuario")
-    private String idUsuario;
+    private Integer idUsuario;
 
     @Column(name = "id_tipo_usuario")
     private Integer idTipoUsuario;
