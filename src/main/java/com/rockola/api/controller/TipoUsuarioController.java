@@ -32,6 +32,7 @@ public class TipoUsuarioController {
         return ResponseEntity.ok(service.getById(id));
     }
 
+
     @PutMapping("/update")
     public ResponseEntity<TipoUsuario> update(@RequestBody TipoUsuario tipoUsuario){
         if (service.getById(tipoUsuario.getIdTipoUsuario())!= null) {
