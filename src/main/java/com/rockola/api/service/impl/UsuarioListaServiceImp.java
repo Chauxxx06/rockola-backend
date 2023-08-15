@@ -5,7 +5,9 @@ import com.rockola.api.repository.GenericRepository;
 import com.rockola.api.repository.UsuarioListaRepository;
 import com.rockola.api.service.UsuarioListaService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class UsuarioListaServiceImp extends CRUDImpl<UsuarioLista, Integer> implements UsuarioListaService {
 
     @Autowired
