@@ -37,7 +37,7 @@ public class Usuario {
     private LocalDateTime fechaRegistro;
 
     @ManyToOne
-    @JoinColumn(name = "id-tipo-usuario-fk", referencedColumnName = "id_tipo_usuario")
+    @JoinColumn(name = "id_tipo_usuario", referencedColumnName = "id_tipo_usuario", insertable=false, updatable=false)
     private TipoUsuario tipoUsuario;
 
 }
