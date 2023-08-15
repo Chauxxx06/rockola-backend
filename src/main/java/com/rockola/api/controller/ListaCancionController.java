@@ -1,6 +1,6 @@
 package com.rockola.api.controller;
 
-import com.rockola.api.entity.CancionArtista;
+//import com.rockola.api.entity.CancionArtista;
 import com.rockola.api.entity.ListaCancion;
 import com.rockola.api.service.ListaCancionService;
 import org.springframework.beans.factory.annotation.Autowired;
