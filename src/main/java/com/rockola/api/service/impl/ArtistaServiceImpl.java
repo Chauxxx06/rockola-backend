@@ -9,10 +9,10 @@ import com.rockola.api.repository.GenericRepository;
 import com.rockola.api.service.ArtistaService;
 
 @Service
-public class ArtistaServiceImpl extends CRUDImpl<Artista, Integer> implements ArtistaService{
+public class ArtistaServiceImpl extends CRUDImpl<Artista, String> implements ArtistaService{
     @Autowired
     private ArtistaRepository repository;
 
     @Override
-    protected GenericRepository<Artista, Integer> getRepository() { return repository; }
+    protected GenericRepository<Artista, String> getRepository() { return repository; }
 }

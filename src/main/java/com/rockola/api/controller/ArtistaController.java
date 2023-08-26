@@ -33,7 +33,7 @@ public class ArtistaController {
     }
 
     @GetMapping("/search/{id}")
-    public ResponseEntity<Artista> getById(@PathVariable Integer id) {
+    public ResponseEntity<Artista> getById(@PathVariable String id) {
         return ResponseEntity.ok(this.artistaServiceImpl.getById(id));
     }
 
@@ -43,7 +43,8 @@ public class ArtistaController {
     }
 
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<Void> delete(@PathVariable("id") Integer id) {
+    public ResponseEntity<Void> delete(@PathVariable String id) {
+        System.out.println(id);
         this.artistaServiceImpl.delete(id);
         return ResponseEntity.notFound().build();
     }
