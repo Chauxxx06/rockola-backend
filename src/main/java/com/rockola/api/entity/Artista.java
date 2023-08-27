@@ -1,6 +1,7 @@
 package com.rockola.api.entity;
 
-import java.time.LocalDateTime;
+// import java.sql.Date;
+// import java.time.LocalDateTime;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -29,6 +30,6 @@ public class Artista {
     private String descripcionArtista;
 
     @Column(name = "fecha_registro", columnDefinition = "DATETIME")
-    private LocalDateTime fechaRegistro;
+    private String fechaRegistro;
 
 }
