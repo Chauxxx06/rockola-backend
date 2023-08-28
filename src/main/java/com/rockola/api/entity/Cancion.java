@@ -28,11 +28,11 @@ public class Cancion {
     @Column(name="imagen_cancion")
     private File imagenCancion;
 
-    @Column(name ="fecha_registro_cancion")
+    @Column(name ="fecha_registro")
     private LocalDateTime fechaCreoCancion;
 
     @ManyToOne
-    @JoinColumn(name="cancion_id_genero_music_fk", referencedColumnName = "id_genero")
+    @JoinColumn(name="id_genero", referencedColumnName = "id_genero")
     private GeneroMusical generoMusical;
 
 
