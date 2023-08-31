@@ -21,11 +21,11 @@ public class AuthController {
 
     @PostMapping("/login")
     public ResponseEntity<UserDetailsDTO> login(@RequestBody LoginDTO logindto){
-        //try {
+        try {
             return ResponseEntity.ok(this.authService.Login(logindto));
-        //} catch (Exception e) {
-        //    return ResponseEntity.status(HttpStatusCode.valueOf(401)).build();
-       // }
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatusCode.valueOf(401)).build();
+        }
     }
     
 }
