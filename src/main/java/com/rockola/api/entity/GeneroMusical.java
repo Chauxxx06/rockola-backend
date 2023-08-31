@@ -23,7 +23,7 @@ public class GeneroMusical {
     @Column(name = "descripcion_genero")
     private String descripcionGenero;
 
-    @Column(name="imagen_genero")
+    @Column(name="imagen_genero_musical")
     private File imagenGenero;
 
     @Column(name ="fecha_registro")
