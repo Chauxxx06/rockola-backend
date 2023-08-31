@@ -26,7 +26,7 @@ public class Cancion {
     private String urlCancion;
 
     @Column(name="imagen_cancion")
-    private File imagenCancion;
+    private String imagenCancion;
 
     @Column(name ="fecha_registro")
     private LocalDateTime fechaCreoCancion;

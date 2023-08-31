@@ -24,7 +24,7 @@ public class GeneroMusical {
     private String descripcionGenero;
 
     @Column(name="imagen_genero_musical")
-    private File imagenGenero;
+    private String imagenGenero;
 
     @Column(name ="fecha_registro")
     private LocalDateTime fechaCreoGenero;
