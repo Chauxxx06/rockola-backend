@@ -15,4 +15,8 @@ public class UsuarioServiceImpl extends CRUDImpl<Usuario, Integer> implements Us
 
     @Override
     protected GenericRepository<Usuario, Integer> getRepository() { return repository; }
+
+    public Usuario findUser(String nickname){
+        return repository.findUser(nickname);
+    }
 }
