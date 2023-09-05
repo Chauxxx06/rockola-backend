@@ -1,7 +1,9 @@
 package com.rockola.api.controller;
 
 import com.rockola.api.entity.GeneroMusical;
+import com.rockola.api.entity.dto.GeneroMusicalDTO;
 import com.rockola.api.service.GeneroMusicalService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,16 +17,20 @@ public class GeneroMusicalController {
 
     @Autowired
     private GeneroMusicalService service;
-
+    
     @PostMapping("/save")
     public ResponseEntity<GeneroMusical>register(@RequestBody GeneroMusical generoMusical){
         return new ResponseEntity<GeneroMusical>(service.register(generoMusical), HttpStatus.CREATED);
     }
 
-
     @GetMapping("/list")
     public ResponseEntity<List<GeneroMusical>> getAll(){
         return ResponseEntity.ok(service.getAll());
+    }
+
+    @GetMapping("/lst_name")
+    public ResponseEntity<List<GeneroMusicalDTO>> list_category(@RequestBody GeneroMusicalDTO generoMusicalDTO){
+        return ResponseEntity.ok(service.getIdYTipoGenero());
     }
 
     @GetMapping("/search/{identificador}")
