@@ -29,7 +29,7 @@ public class GeneroMusicalController {
     }
 
     @GetMapping("/lst_name")
-    public ResponseEntity<List<GeneroMusicalDTO>> list_category(@RequestBody GeneroMusicalDTO generoMusicalDTO){
+    public ResponseEntity<List<GeneroMusicalDTO>> list_category(){
         return ResponseEntity.ok(service.getIdYTipoGenero());
     }
 

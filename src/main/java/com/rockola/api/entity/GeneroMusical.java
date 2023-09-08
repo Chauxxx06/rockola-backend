@@ -3,7 +3,6 @@ package com.rockola.api.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
-//import java.io.File;
 import java.time.LocalDateTime;
 
 

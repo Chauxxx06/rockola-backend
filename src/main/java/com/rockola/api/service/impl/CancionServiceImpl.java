@@ -4,6 +4,9 @@ import com.rockola.api.entity.Cancion;
 import com.rockola.api.repository.CancionRepository;
 import com.rockola.api.repository.GenericRepository;
 import com.rockola.api.service.CancionService;
+
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +15,14 @@ public class CancionServiceImpl extends CRUDImpl<Cancion, Integer> implements Ca
 
     @Autowired
     private CancionRepository repository;
+    
+
     @Override
     protected GenericRepository<Cancion, Integer> getRepository() { return repository; }
+
+    @Override
+    public List<Cancion> findCancion(Integer idGenero){
+        return repository.findCancion(idGenero);
+    }
+
 }
