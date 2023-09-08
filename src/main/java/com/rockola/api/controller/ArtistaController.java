@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.rockola.api.entity.Artista;
+import com.rockola.api.entity.dto.ArtistaDTO;
 import com.rockola.api.service.impl.ArtistaServiceImpl;
 
 @RestController
@@ -30,6 +31,11 @@ public class ArtistaController {
     @GetMapping("/list")
     public ResponseEntity<List<Artista>> getAll() {
         return ResponseEntity.ok(this.artistaServiceImpl.getAll());
+    }
+
+     @GetMapping("/lst_name")
+    public ResponseEntity<List<ArtistaDTO>> list_artista(){
+        return ResponseEntity.ok(artistaServiceImpl.getIdYTNombreArtista());
     }
 
     @GetMapping("/search/{id}")

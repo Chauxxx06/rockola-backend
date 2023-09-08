@@ -25,11 +25,17 @@ public class CancionController {
     public ResponseEntity<List<Cancion>> getAll(){
         return ResponseEntity.ok(service.getAll());
     }
-
+    
     @GetMapping("/search/{identificador}")
     public ResponseEntity<Cancion> getById(@PathVariable("identificador") Integer id){
         return ResponseEntity.ok(service.getById(id));
     }
+    
+      @GetMapping("/list_genero/{identificador}")
+    public List<Cancion> findCancion(@PathVariable("identificador") Integer identificador){
+        return service.findCancion(identificador);
+    }
+
 
     @PutMapping("/update")
     public ResponseEntity<Cancion> update(@RequestBody Cancion cancion){

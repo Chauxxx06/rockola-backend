@@ -24,15 +24,18 @@ public class Cancion {
     @Column(name = "url_cancion")
     private String urlCancion;
 
+    @Column(name = "id_genero")
+    private Integer idGenero;
+
     @Column(name="imagen_cancion")
     private String imagenCancion;
 
     @Column(name ="fecha_registro")
     private LocalDateTime fechaCreoCancion;
 
-    @ManyToOne
-    @JoinColumn(name="id_genero", referencedColumnName = "id_genero")
+     @ManyToOne
+    @JoinColumn(name="id_genero", referencedColumnName = "id_genero", insertable=false, updatable=false)
     private GeneroMusical generoMusical;
-
+    
 
 }
